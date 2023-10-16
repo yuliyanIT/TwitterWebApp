@@ -4,5 +4,33 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Hello! This is my Twitter monitoring web app.</p>
 </div>
+@model TwitterWebApp.Models.TweetModel
+
+@{
+    ViewData["Title"] = "Tweet";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+  
+  
+    <a class="twitter-share-button"
+       href="https://twitter.com/intent/tweet?text=Hello%20world"
+        data-size="large">
+        Tweet
+        <link rel="canonical"
+              href="/web/tweet-button">
+    </a>
+
+    <a href="https://twitter.com/messages/compose?recipient_id=3805104374"
+       class="twitter-dm-button">
+        Message 
+     </a>
+</body>
+</html>
